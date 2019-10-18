@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>basecamp</title>
+
+    <meta name="description" content="made with love">
+    <meta name="author" content="thomas janhonen">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="reveal/css/reveal.css">
+    <link rel="stylesheet" href="reveal/css/theme/presentation.css" id="theme">
+
+    <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+    <script>
+    window.twttr = !function(document, script, id) {
+      let js, fjs = document.getElementsByTagName(script)[0]
+
+      t = window.twttr || {}
+      if (document.getElementById(id)) return t
+
+      js = document.createElement(script)
+      js.id = id
+      js.src = "https://platform.twitter.com/widgets.js"
+
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function(f) {
+        t._e.push(f)
+      }
+
+      return t
+    }(document, "script", "twitter-wjs")
+    </script>
+
+    <!-- Print and PDF export -->
+    <script>
+    let link = document.createElement( 'link' )
+    link.rel = 'stylesheet'
+    link.type = 'text/css'
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css'
+    document.getElementsByTagName( 'head' )[0].appendChild( link )
+    </script>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown data-background="reveal/image/atom.png" data-background-position="bottom">
+          <textarea data-template>
+            # basecamp
+            ### october week 42
+          </textarea>
+        </section>
+
+        <section data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+          <div class="person-container">
+            <div class="person_">
+              <img src="reveal/image/me.png" alt="thomas janhonen" title="thomas janhonen" class="person">
+              <pre><code class="hljs" data-line-numbers>const name = 'Thomas Janhonen'
+let information:Object = {
+  position: 'founder, engineer, CTO',
+  hasAbilities: [
+    'JavaScript', 'Ruby', 'HTML', 'Linux (ಠ_ಠ)', 'Jekyll', 'docker', 'go',
+    'network', 'architecture'
+  ],
+
+  twitter: '@thomas_janhonen'
+}
+              </code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+          <textarea data-template>
+            # today
+            - oss: where to begin
+            - #cybersecuritymonth
+            - coming soon...
+
+            Note:
+            mention some stuff
+          </textarea>
+        </section>
+
+        <section>
+          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+            <textarea data-template>
+              # oss: where to begin
+            </textarea>
+          </section>
+          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+            <textarea data-template>
+              ### what to do
+              - contribute code
+              - write documentation
+              - create visual identity
+              - provide translation
+              - teach or provide help on IRC/Slack/Gitter
+            </textarea>
+          </section>
+          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+            <textarea data-template>
+              ### contribute
+              - [opensource.guide](https://opensource.guide) has great information
+            </textarea>
+          </section>
+          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+            <textarea data-template>
+              ### make something
+              - again [opensource.guide](https://opensource.guide) has great information
+              - choose a license
+              - invest time in a readme and wiki
+              - cover contributing guidelines as well as a code of conduct
+              - consult this [list](https://opensource.guide/starting-a-project/#your-pre-launch-checklist) when you are ready to say 'hello world'
+            </textarea>
+          </section>
+          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+            <textarea data-template>
+              ### how to find an issue
+              - [GitHub/search?q=label%3Aterm+state%3open+no%3Aassignee](https://github.com/search?q=label%3Ahacktoberfest+no%3Aassignee)
+                - [GitHub advanced search](https://github.com/search/advanced)
+              - make your own (i.e. contribute a feature you are missing from a project)
+              - IRC/Slack/Gitter communities
+            </textarea>
+          </section>
+          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+            <textarea data-template>
+              ### how to interact with people
+              - read the code of conduct
+              - read the contribution guideline
+              - in general, treat others like you want to be treated (for the most part :S)
+            </textarea>
+          </section>
+          <section data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+            <h3>anatomy of a Pull Request</h3>
+            <ul>
+              <li>Open Source contributions take place on a fork</li>
+            </ul>
+            <pre><code class="hljs zsh" data-line-numbers>git clone git@project.git
+cd project
+
+git branch feature/moi
+
+git checkout feature/moi
+            </code></pre>
+          </section>
+          <section data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+            <h3>anatomy of a Pull Request</h3>
+            <pre><code class="hljs zsh" data-line-numbers>git add --all
+git commit --sign -m 'implement feature
+
+additional description of _why_ this commit is taking place.
+content'
+
+git push --set-upstream origin feature/moi
+            </code></pre>
+          </section>
+          <section data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+            <h3>anatomy of a Pull Request</h3>
+            <pre><code class="hljs zsh" data-line-numbers>git remote add upstream git@project.git
+
+git fetch upstream
+git merge --no-ff upstream/master master
+            </code></pre>
+            <ul>
+              <li>create the pull request via GitHub</li>
+            </ul>
+          </section>
+          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+            <textarea data-template>
+              ### the community
+              - develop your own skill (technical and interpersonal)
+              - people often talk about impact - Open Source arguably has the most impact
+            </textarea>
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+            <textarea data-template>
+              # #cybersecuritymonth
+            </textarea>
+          </section>
+          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+            <textarea data-template>
+              ### rotate your passwords...
+              ...and practise good password hygiene
+            </textarea>
+          </section>
+          <section data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+            <h3>sign your commit...</h3>
+            <p>...if you do not, anyone can pose as you</p>
+
+            <p class="file">.gitconfig</p>
+            <pre><code class="hljs zsh" data-line-numbers>[user]
+  ...
+  signingkey = gpg_key_here
+            </code></pre>
+            <pre><code class="hljs zsh" data-line-numbers>git commit --sign -m 'message'</code></pre>
+            <pre><code class="hljs zsh" data-line-numbers>git tag --sign -m 'message' tag</code></pre>
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+            <textarea data-template>
+              # coming soon...
+            </textarea>
+          </section>
+          <section data-markdown data-background="reveal/image/event.png" data-background-position="bottom">
+            <textarea data-template>
+              ### hacktober fest helsinki
+              ##### october 25th, 17:00 to 21:00
+
+              [https://bit.ly/hacktober-hki](https://bit.ly/hacktober-hki)
+            </textarea>
+          </section>
+          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+            <textarea data-template>
+              ### housewarming
+              ##### october 31st, 17:00 to late
+            </textarea>
+          </section>
+        </section>
+
+        <!-- <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+          <script type="text/template">
+            # \,,/(^_^)\,,/
+          </script>
+        </section> -->
+
+        <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+          <textarea data-template>
+            # thank you \o/
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="reveal/js/reveal.js"></script>
+
+    <script>
+    Reveal.initialize({
+      controls: false,
+
+      progress: true,
+      history: true,
+
+      margin: 0.1,
+
+      //width: '1200',
+      //height: '675',
+      minScale: 0.35, maxScale: 1,
+
+      transition: 'slide',
+
+      dependencies: [
+        { src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+        { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+        { src: 'reveal/plugin/notes/notes.js', async: true }
+      ]
+    })
+    </script>
+  </body>
+</html>
