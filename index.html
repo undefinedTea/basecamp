@@ -91,59 +91,85 @@ let information:Object = {
         </section>
 
         <section>
-          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+          <section
+            data-markdown
+            data-background="reveal/image/base.png"
+            data-background-position="bottom"
+          >
             <textarea data-template>
-              # oss: where to begin
+              # OSS: Where to begin
             </textarea>
           </section>
-          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+          <section
+            data-markdown
+            data-background="reveal/image/base.png"
+            data-background-position="bottom"
+          >
             <textarea data-template>
-              ### what to do
-              - contribute code
-              - write documentation
-              - create visual identity
-              - provide translation
-              - teach or provide help on IRC/Slack/Gitter
+              ### What to do
+              - Contribute code
+              - Write documentation
+              - Create visual identity
+              - Provide translation
+              - Teach or provide help on IRC/Slack/Gitter
             </textarea>
           </section>
-          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+          <section
+            data-markdown
+            data-background="reveal/image/base.png"
+            data-background-position="bottom"
+          >
             <textarea data-template>
-              ### contribute
+              ### Contribute
               - [opensource.guide](https://opensource.guide) has great information
             </textarea>
           </section>
-          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+          <section
+            data-markdown
+            data-background="reveal/image/base.png"
+            data-background-position="bottom"
+          >
             <textarea data-template>
-              ### make something
-              - again [opensource.guide](https://opensource.guide) has great information
-              - choose a license
-              - invest time in a readme and wiki
-              - cover contributing guidelines as well as a code of conduct
-              - consult this [list](https://opensource.guide/starting-a-project/#your-pre-launch-checklist) when you are ready to say 'hello world'
+              ### Make something
+              - Again [opensource.guide](https://opensource.guide) has great information
+              - Choose a license
+              - Invest time in a readme and wiki
+              - Cover contributing guidelines as well as a code of conduct
+              - Consult this [list](https://opensource.guide/starting-a-project/#your-pre-launch-checklist) when you are ready to say 'hello world'
             </textarea>
           </section>
-          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+          <section
+            data-markdown
+            data-background="reveal/image/base.png"
+            data-background-position="bottom"
+          >
             <textarea data-template>
-              ### how to find an issue
+              ### How to find an issue
               - [GitHub/search?q=label%3Aterm+state%3open+no%3Aassignee](https://github.com/search?q=label%3Ahacktoberfest+no%3Aassignee)
                 - [GitHub advanced search](https://github.com/search/advanced)
-              - make your own (i.e. contribute a feature you are missing from a project)
+              - Make your own (i.e. contribute a feature you are missing from a project)
               - IRC/Slack/Gitter communities
             </textarea>
           </section>
-          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+          <section
+            data-markdown
+            data-background="reveal/image/base.png"
+            data-background-position="bottom"
+          >
             <textarea data-template>
-              ### how to interact with people
-              - read the code of conduct
-              - read the contribution guideline
-              - in general, treat others like you want to be treated (for the most part :S)
+              ### How to interact with people
+              - Read the code of conduct
+              - Read the contribution guideline
+              - In general, treat others like you want to be treated (for the most part :S)
             </textarea>
           </section>
-          <section data-background="reveal/image/atom-bare.png" data-background-position="bottom">
-            <h3>anatomy of a Pull Request</h3>
-            <ul>
-              <li>Open Source contributions take place on a fork</li>
-            </ul>
+          <section
+            data-background="reveal/image/base.png"
+            data-background-position="bottom"
+          >
+            <h3>Anatomy of a Pull Request</h3>
+            <p>Open Source contributions take place on a fork</p>
+
             <pre><code class="hljs zsh" data-line-numbers>git clone git@project.git
 cd project
 
@@ -152,7 +178,10 @@ git branch feature/moi
 git checkout feature/moi
             </code></pre>
           </section>
-          <section data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+          <section
+            data-background="reveal/image/base.png"
+            data-background-position="bottom"
+          >
             <h3>anatomy of a Pull Request</h3>
             <pre><code class="hljs zsh" data-line-numbers>git add --all
 git commit --sign -m 'implement feature
@@ -163,22 +192,27 @@ content'
 git push --set-upstream origin feature/moi
             </code></pre>
           </section>
-          <section data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+          <section
+            data-background="reveal/image/base.png"
+            data-background-position="bottom"
+          >
             <h3>anatomy of a Pull Request</h3>
             <pre><code class="hljs zsh" data-line-numbers>git remote add upstream git@project.git
 
 git fetch upstream
-git merge --no-ff upstream/master master
+git rebase upstream/master master
             </code></pre>
-            <ul>
-              <li>create the pull request via GitHub</li>
-            </ul>
+            <p>Create the Pull Request via GitHub</p>
           </section>
-          <section data-markdown data-background="reveal/image/atom-bare.png" data-background-position="bottom">
+          <section
+            data-markdown
+            data-background="reveal/image/base.png"
+            data-background-position="bottom"
+          >
             <textarea data-template>
-              ### the community
-              - develop your own skill (technical and interpersonal)
-              - people often talk about impact - Open Source arguably has the most impact
+              ### The community
+              - Develop your own skill (technical and interpersonal)
+              - People often talk about impact - Open Source arguably has the most impact
             </textarea>
           </section>
         </section>
